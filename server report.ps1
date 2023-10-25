@@ -1,5 +1,5 @@
 # get computer name
-$info = Get-ComputerInfo | Select-Object CsDNSHostName
+$info = Get-ComputerInfo | Select-Object CsDNSHostName, OsVersion
 $info
 
 
