@@ -13,7 +13,7 @@ $obj = [PSCustomObject]@{
     ComputerName = $ComputerInfo.CsDNSHostName
     OSVersion = $ComputerInfo.OsVersion
     LogicalDicks = $DicksInfo.count
-    FreeSpace = $FreeSpace.Free / 1gb
+    FreeSpace_GB = [System.Math]::Round(($FreeSpace.Free / 1gb),0)
 
 }
 Write-Output $obj
