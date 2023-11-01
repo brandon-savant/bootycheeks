@@ -13,7 +13,8 @@ $obj = [PSCustomObject]@{
     ComputerName = $ComputerInfo.CsDNSHostName
     OSVersion = $ComputerInfo.OsVersion
     LogicalDicks = $DicksInfo.count
-    FreeSpace = $FreeSpace.Free
+    FreeSpace = $FreeSpace.Free / 1gb
+
 }
 Write-Output $obj
 
